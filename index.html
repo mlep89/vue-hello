@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Vue Hello</title>
+</head>
+<body>
+
+    <div id="root">
+        <h1 v-bind:class="colorClass">Il mio sito</h1>
+        <div>
+            <label for="">Come ti chiami?</label>
+            <input v-model="name">
+            <label for="">Qual'è il tuo cognome?</label>
+            <input v-model="surname">
+            <button @click="colorChange">Invia</button>
+        </div>
+        <div>
+            <p v-bind:class="offShow">Benvenuto sul nostro sito <span>{{ name }}</span> <span>{{ surname }}</span></p>
+            <img v-bind:class="myImage" src="https://informatorecoopfi.it/wp-content/uploads/2019/04/pulcino.jpeg" alt="">
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

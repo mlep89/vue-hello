@@ -1,0 +1,15 @@
+h1.red {
+    color: red;
+}
+
+h1.blue {
+    color: blue;
+}
+
+.showed {
+    display: none;
+}
+
+.img {
+    display: none;
+}
